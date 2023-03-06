@@ -1,0 +1,12 @@
+{
+  "always_run_in_app" : false,
+  "icon" : {
+    "color" : "deep-blue",
+    "glyph" : "magic"
+  },
+  "name" : "Standort",
+  "script" : "\/\/ Erstelle ein neues ListWidget-Objekt\nlet widget = new ListWidget()\n\/\/ Hole den aktuellen Standort als Objekt mit Breiten- und Längengrad\nlet location = await Location.current()\n\/\/ Wandle den Standort in eine Adresse um\nlet address = await Location.reverseGeocode(location.latitude, location.longitude)\n\/\/ Füge die Adresse als Text zum Widget hinzu\nwidget.addText(\"Mein aktueller Standort ist:\")\nwidget.addText(address[0].name + \", \" + address[0].postalCode + \", \" + address[0].locality + \", \" + address[0].administrativeArea + \", \" + address[0].isoCountryCode)\n\/\/ Zeige das Widget an\nScript.setWidget(widget)\nconsole.log(address)",
+  "share_sheet_inputs" : [
+
+  ]
+}
