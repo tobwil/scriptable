@@ -11,3 +11,6 @@
 
 *Quickly find your current location and address on iOS*
 - Get your current location and address with a single tap using the 'Where Am I?' widget. This Scriptable widget provides you with your precise latitude and longitude coordinates, and translates that information into a human-readable address. Place the widget on your iOS home screen or Today View for quick access to your current location, whether you need to share it with others or simply keep track of where you are.
+
+## [**Binary Watch**](https://github.com/tobwil/scriptable/blob/main/binary_watch/watch.js)
+![watch_screenshot](https://user-images.githubusercontent.com/72387477/228521879-4d6f8358-fb06-4dda-b469-a18f09d5cc20.jpg)
